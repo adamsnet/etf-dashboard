@@ -32,26 +32,8 @@ th { color: #94a3b8; font-weight: 500; font-size: 0.85em; }
 
 <div class="header">
   <h1>00981A ETF 儀表板</h1>
-  <div class="update">持股日期: 2026-04-08 | 更新時間: 2026-04-08 09:30 | 比較基準: 2026-04-01</div>
+  <div class="update">持股日期: 2026-04-08 | 更新時間: 2026-04-08 09:41 | 比較基準: 2026-04-01</div>
 </div>
-
-<!-- 策略提醒 -->
-<div class="strategy-box">
-  <h3>操作規則</h3>
-  <div class="rule"><span class="num">1</span> 股票進入 Top 10 → <strong>隔天開盤買入</strong></div>
-  <div class="rule"><span class="num">2</span> 等權重配置（每檔相同金額）</div>
-  <div class="rule"><span class="num">3</span> 持有 21 天，停損 <strong style="color:#ef4444">-10%</strong></div>
-  <div class="rule"><span class="num">4</span> 被停損後若回到成本價且仍在 Top 10 → <strong>追回</strong></div>
-  <div class="rule"><span class="num">5</span> 不加碼、不追高，每個訊號只做一次</div>
-</div>
-
-<!-- 新進 Top 10 -->
-<div class="card signal-card" style="border-color:#ef4444; margin-bottom:12px;">
-  <h3>🔴 新進 Top 10 — 買入訊號</h3>
-  <div style="font-size:0.9em; color:#94a3b8; margin-bottom:8px;">隔天開盤買入，等權重配置</div>
-  <div style="padding:8px 0; border-bottom:1px solid #334155;">    <span style="color:#f59e0b; font-weight:700;">#10</span>     <strong>3037 欣興</strong>     <span style="color:#94a3b8">權重 4.48%</span>     <span style="color:#22c55e">+8.7%</span>  </div>
-</div>
-
 
 <!-- Top 10 持股 -->
 <div class="card">
@@ -256,6 +238,14 @@ th { color: #94a3b8; font-weight: 500; font-size: 0.85em; }
 </div>
 
 
+<!-- 新進 Top 10 -->
+<div class="card signal-card" style="border-color:#ef4444; margin-bottom:12px;">
+  <h3>🔴 新進 Top 10 — 買入訊號</h3>
+  <div style="font-size:0.9em; color:#94a3b8; margin-bottom:8px;">隔天開盤買入，等權重配置</div>
+  <div style="padding:8px 0; border-bottom:1px solid #334155;">    <span style="color:#f59e0b; font-weight:700;">#10</span>     <strong>3037 欣興</strong>     <span style="color:#94a3b8">權重 4.48%</span>     <span style="color:#22c55e">+8.7%</span>  </div>
+</div>
+
+
 <!-- 退出 Top 10 -->
 <div class="card" style="margin-bottom:12px;">
   <h3>退出 Top 10 — 觀察停損</h3>
@@ -263,8 +253,16 @@ th { color: #94a3b8; font-weight: 500; font-size: 0.85em; }
 </div>
 
 
+<!-- 策略提醒 -->
+<div class="strategy-box">
+  <h3>操作規則</h3>
+  <div class="rule"><span class="num">1</span> 股票進入 Top 10 → <strong>隔天開盤買入</strong></div>
+  <div class="rule"><span class="num">2</span> 等權重配置（每檔相同金額）</div>
+  <div class="rule"><span class="num">3</span> 持有 <strong>21 天</strong>後賣出</div>
+</div>
+
 <div style="text-align:center; color:#475569; font-size:0.75em; padding:20px 0;">
-  00981A 持股資料來源: MoneyDJ | 股價來源: FinLab | 策略: 進入 Top10 + 停損10% + 追回
+  00981A 持股資料來源: MoneyDJ | 股價來源: FinLab | 策略: 進入 Top10，持有21天
 </div>
 
 </body>
